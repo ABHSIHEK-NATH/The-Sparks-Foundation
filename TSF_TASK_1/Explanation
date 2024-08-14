@@ -1,0 +1,27 @@
+*Prediction Using Supervised ML*
+
+Objective - Predict the percentage of an student based on the number of study hours.
+
+In this section we will see how the Python Scikit-Learn library for machine learning 
+can be used to implement regression functions. We will start with simple linear regression involving two variables.
+
+*Working on the Analysis*
+
+Describing the data -> Checking all the unique values since there are only two variables Hours and Scores, 
+                       Checking for Missing and Duplicate values - there we neither any Missing values nor any Duplicate values.
+Data Visualization -> Visualizing the Hours and Scores distribution and their corresponding relation between Hours and Scores,
+                      Checking for Outliers - Hours and Scores doesnot have any outliers,
+                      The Scores and Hours data shows a Normal Distribution.
+Correlation Matrix -> Checking the Correlation Matrix - it shows that the variables are Highly Correlated, meaning the variables has strong relation with eachother,
+                      There is a positive linear relation between number of hours studied and percentage of scores.
+Using Linear Regression for training the Algorithm -> After model training the regressor.coef_: [9.68207815] and regressor.intercept_: 2.826892353899737
+Creating a Prediction Model -> R2 Score is 0.9678055545167994,
+                               Mean Absolute Error: 3.9207511902099244,
+                               Mean Squared Error: 18.943211722315272,
+                               Root Mean Squared Error: 4.352380006653288,
+                               Lower MAE implies the models predicted values are close to the actual ones.
+
+Predicting What will be the predicted score if a student studied 9.25hrs/day?
+-> No of Hours = [[9.25]]
+   Predicted Score = 92.38611528261494
+   So if a Student is studying for 9.25 Hours a Day, then the student is likely to Score 92.38%
