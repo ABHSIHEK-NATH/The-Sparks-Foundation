@@ -1,0 +1,48 @@
+*Exploratory Data Analysis - Retail*
+
+-> Project Overview - This project involves performing Exploratory Data Analysis (EDA) on the SampleSuperstore dataset as part of the 
+Data Science and Business Analytics Internship at The Spark Foundation. The objective is to derive insights from the retail data, 
+understand patterns, and identify key factors affecting sales and profit.
+
+-> Dataset Name: SampleSuperstore.csv
+
+-> Description: This dataset contains information on orders, including sales, profit, discount, and shipping details across various regions 
+and categories in the United States.
+
+-> Analysis Steps
+
+1. Importing Libraries: Essential libraries such as pandas, numpy, matplotlib, and seaborn are imported for data manipulation and visualization.
+
+2. Data Loading: The dataset is uploaded and loaded into a Pandas DataFrame for analysis.
+
+3. Data Exploration: The dataset's dimensions, column names, and basic statistics are explored using .shape, .columns, .info(), and .describe() methods.
+
+4. Data Cleaning 
+   - Missing Values: Checked using .isnull().sum(). The dataset is clean with no missing values.
+   - Duplicate Values: Found and removed using .duplicated().sum() and .drop_duplicates().
+   - Unnecessary Columns: The Postal Code column is dropped as it doesn't contribute to the analysis.
+
+5. Data Visualization
+   - Pairplot: Used to visualize relationships between features categorized by Region.
+   - Heatmap: Visualized pairwise correlations between numerical features to understand relationships.
+
+6. Univariate Analysis
+   - Shipping Mode: Most orders are shipped using the Standard Class, with the least using Same Day.
+   - Segment: Majority of the customers belong to the Consumer segment.
+   - Category: Orders are categorized into Technology, Furniture, and Office Supplies.
+   - Region: Western Region has the highest number of orders.
+
+7. Bivariate Analysis
+   - Sales and Profit by Category:
+   - Technology has the highest sales and profit.
+   - Furniture shows moderate sales but the least profit.
+   - Sales and Profit by Sub-Category:
+   - Copiers have the highest profit, whereas Tables show significant losses.
+   - Profit by State: California contributes the most to profits, while Texas incurs the most significant losses.
+   - Discount vs. Profit and Sales: Higher discounts lead to higher sales but lower profits.
+
+8. Conclusion
+   - Discounts above 30% result in losses; lower discounts tend to be profitable.
+   - Sales strategies should focus on Technology and Office Supplies due to their profitability.
+   - Furniture, especially Tables, should be reconsidered due to their poor profit margins.
+   - States like New York and California should be targeted for increasing sales and profits.
